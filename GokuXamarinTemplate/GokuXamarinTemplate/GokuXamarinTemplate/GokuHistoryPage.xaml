@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="GokuXamarinTemplate.GokuHistoryPage">
+    <ContentPage.Content>
+        <Grid>
+
+            <Image Source="PanGohan.jpg"  
+               Aspect="AspectFill" /> 
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"  />
+                    <!--Banner-->
+                    <RowDefinition Height="180"  />
+                    <!--Image-->
+                    <RowDefinition Height="*" />
+                    <!--Buttons-->
+                    <RowDefinition Height="*" />
+                    <!--Buttons-->
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5*" />
+                    <!--Buttons Left-->
+                    <ColumnDefinition Width="5*" />
+                    <!--Buttons Left-->
+                </Grid.ColumnDefinitions>
+
+                <BoxView BackgroundColor="red"
+                     Grid.Row="0" 
+                     Grid.Column="0" 
+                     Grid.ColumnSpan="2"
+                     Opacity="0.7" />
+
+                <Label Text="Goku Friend" 
+                   TextColor="white"
+                   Grid.Row="0" 
+                   FontSize="18"
+                   FontAttributes="Bold"
+                   Grid.Column="0" 
+                   Grid.ColumnSpan="2" 
+                   VerticalTextAlignment="Center" 
+                   HorizontalOptions="Center" />
+
+                <Image Source="icoTop" 
+                   Grid.Row="0"
+                   Grid.Column="1"
+                   HorizontalOptions="End" />
+
+                <Image Source="AllBalls.jpeg"  
+                   Aspect="Fill" 
+                   Grid.Row="1"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="2"
+                   Opacity="0.98" />
+
+                <Grid Grid.Row="2"
+                  Grid.Column="0"
+                  Grid.ColumnSpan="2"
+                  Padding="10,0,10,0">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="120" /> 
+                        <RowDefinition Height="120" /> 
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="5*" />
+                        <ColumnDefinition Width="5*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Button 
+                         Text="Dragon Ball Origin"
+                         Grid.Row="0"
+                         Grid.Column="0"
+                         CornerRadius="8"
+                         ContentLayout="Top,0" 
+                         Image="sphereOne" 
+                         Opacity="0.7"
+                         FontAttributes="Bold"
+                         TextColor="white"
+                         BackgroundColor="red" />
+
+                    <Button 
+                         Text="Dragon Ball Z"
+                         Grid.Row="0"
+                         Grid.Column="1"
+                         CornerRadius="8"
+                         ContentLayout="Top,0" 
+                         Image="sphereTwo" 
+                         Opacity="0.7"
+                         FontAttributes="Bold" 
+                         TextColor="white"
+                         BackgroundColor="red" />
+
+                    <Button 
+                         Text="Dragon Ball Super"
+                         Grid.Row="1"
+                         Grid.Column="0"
+                         CornerRadius="8"
+                         ContentLayout="Top,0" 
+                         Image="sphereThree" 
+                         Opacity="0.7"
+                         FontAttributes="Bold" 
+                         TextColor="white"
+                         BackgroundColor="red" />
+
+                    <Button 
+                         Text="Dragon Ball GT"
+                         Grid.Row="1"
+                         Grid.Column="1"
+                         CornerRadius="8"
+                         ContentLayout="Top,0" 
+                         Image="sphereFour" 
+                         Opacity="0.7" 
+                         FontAttributes="Bold"
+                         TextColor="white"
+                         BackgroundColor="red" />
+
+                </Grid>
+            </Grid>
+        </Grid>
+
+    </ContentPage.Content>
+</ContentPage>
